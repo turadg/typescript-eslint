@@ -5,6 +5,7 @@
     "@nrwl/cli",
     "@nrwl/devkit",
     "@nrwl/jest",
+    "@nrwl/nx-cloud",
     "@nrwl/tao",
     "@types/jest",
     "cypress",
