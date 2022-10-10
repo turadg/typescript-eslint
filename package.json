@@ -38,7 +38,7 @@
     "lint-markdown-fix": "yarn lint-markdown --fix",
     "lint-markdown": "markdownlint \"**/*.md\" --config=.markdownlint.json --ignore-path=.markdownlintignore",
     "lint": "cross-env NODE_OPTIONS=\"--max-old-space-size=16384\" eslint .",
-    "postinstall": "yarn patch-package && yarn husky install && yarn build",
+    "postinstall": "tools/scripts/postinstall.sh",
     "pre-commit": "yarn lint-staged",
     "start": "nx run website:start",
     "test": "nx run-many --target=test --all --parallel",

@@ -1,7 +1,16 @@
 {
   "automerge": true,
   "enabledManagers": ["github-actions", "npm"],
-  "ignoreDeps": ["cypress"],
+  "ignoreDeps": [
+    "@nrwl/cli",
+    "@nrwl/devkit",
+    "@nrwl/jest",
+    "@nrwl/tao",
+    "@types/jest",
+    "cypress",
+    "jest",
+    "ts-jest"
+  ],
   "internalChecksFilter": "strict",
   "labels": ["dependencies"],
   "packageRules": [
