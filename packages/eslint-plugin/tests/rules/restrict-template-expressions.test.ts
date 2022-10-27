@@ -358,6 +358,7 @@ ruleTester.run('restrict-template-expressions', rule, {
           return \`arg = \${arg}\`;
         }
       `,
+      // TODO constraint
       errors: [
         {
           messageId: 'invalidType',

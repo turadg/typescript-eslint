@@ -127,11 +127,14 @@ class Foo<T = number> extends Bar<string> {}
 interface Bar<T = number> {}
 class Foo<T = number> implements Bar<string> {}
     `,
-    `
+    {
+      code: `
 import { F } from './missing';
 function bar<T = F>() {}
 bar<F<number>>();
-    `,
+      `,
+      // TODO constraint
+    },
     `
 type A<T = Element> = T;
 type B = A<HTMLInputElement>;
